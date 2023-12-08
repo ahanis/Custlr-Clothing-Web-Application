@@ -1,0 +1,969 @@
+<!-- Code written by Hariz and Gerald -->
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Women's Search | FITTR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/yellowicon.png">
+    <link rel="apple-touch-icon" href="images/yellowicon.png">
+
+    <!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer js -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+
+    <!-- Main wrapper -->
+    <div class="wrapper_search" id="wrapper">
+
+        <!-- Header -->
+        <header id="wn__header" class="oth-page header__area header__absolute sticky__header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-7 col-lg-2">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo/yellow1.png" alt="logo images">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-none d-lg-block">
+						<nav class="mainmenu__nav">
+							<ul class="meninmenu d-flex justify-content-start">
+								<li class="drop"><a href="#">Brands</a>
+									<div class="megamenu mega03">
+										<ul class="item item03">
+                                            <li class="title">Top Brands | Men</li>
+                                            <li><a onclick="openHeaderLink('tommy hilfiger', '', 'men')">Tommy Hilfiger</a></li>
+                                            <li><a onclick="openHeaderLink('the north face', '', 'men')">The North Face</a></li>
+                                            <li><a onclick="openHeaderLink('polo ralph lauren', '', 'men')">Polo Ralph Lauren</a></li>
+                                            <li><a onclick="openHeaderLink('gucci', '', 'men')">Gucci</a></li>
+                                            <li><a onclick="openHeaderLink('cotton on', '', 'men')">Cotton On</a></li>
+                                        </ul>
+                                        <ul class="item item03">
+                                            <li class="title">Top Brands | Women</a></li>
+                                            <li><a onclick="openHeaderLink('banana republic', '', 'women')">Banana Republic</a></li>
+                                            <li><a onclick="openHeaderLink('forever 21', '', 'women')">FOREVER 21</a></li>
+                                            <li><a onclick="openHeaderLink('h&m', '', 'women')">H&M</a></li>
+                                            <li><a onclick="openHeaderLink('mango', '', 'women')">Mango</a></li>
+                                            <li><a onclick="openHeaderLink('zalora', 'zalora', 'women')">Zalora</a></li>
+                                        </ul>
+                                        <ul class="item item03">
+                                            <li class="title">Top Brands | Kids</a></li>
+                                            <li><a onclick="openHeaderLink('abercrombie & fitch', '', 'kids')">Abercrombie & Fitch</a></li>
+                                            <li><a onclick="openHeaderLink('poney', '', 'kids')">Poney</a></li>
+                                            <li><a onclick="openHeaderLink('disney baby', '', 'kids')">Disney Baby</a></li>
+                                            <li><a onclick="openHeaderLink('kiko', '', 'kids')">KIKO</a></li>
+                                            <li><a onclick="openHeaderLink('akarana baby', '', 'kids')">Akarana Baby</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop"><a href="#">Men</a>
+                                    <div class="megamenu mega02">
+                                        <ul class="item item02">
+                                            <li class="title">Formal</a></li>
+                                            <li><a onclick="openHeaderLink('esprit', '', 'men')">Esprit</a></li>
+                                            <li><a onclick="openHeaderLink('pacolino', '', 'men')">Pacolino</a></li>
+                                            <li><a onclick="openHeaderLink('tommy hilfiger', '', 'men')">Tommy Hilfiger</a></li>
+                                            <li><a onclick="openHeaderLink('boss', '', 'men')">BOSS</a></li>
+                                            <li><a onclick="openHeaderLink('dockers', '', 'men')">Dockers</a></li>
+                                        </ul>
+                                        <ul class="item item02">
+                                            <li class="title">Casual</a></li>
+                                            <li><a onclick="openHeaderLink('champion', '', 'men')">Champion</a></li>
+                                            <li><a onclick="openHeaderLink('converse', '', 'men')">Converse</a></li>
+                                            <li><a onclick="openHeaderLink('gucci', '', 'men')">Gucci</a></li>
+                                            <li><a onclick="openHeaderLink('fendi', '', 'men')">Fendi</a></li>
+                                            <li><a onclick="openHeaderLink('gap', '', 'men')">GAP</a></li>
+                                        </ul>
+                                        <ul class="item item02">
+                                            <li class="title">Sports</a></li>
+                                            <li><a onclick="openHeaderLink('adidas', '', 'men')">Adidas</a></li>
+                                            <li><a onclick="openHeaderLink('nike', '', 'men')">Nike</a></li>
+                                            <li><a onclick="openHeaderLink('puma', '', 'men')">Puma</a></li>
+                                            <li><a onclick="openHeaderLink('under armour', '', 'men')">Under Armour</a></li>
+                                            <li><a onclick="openHeaderLink('kappa', '', 'men')">Kappa</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop"><a href="#">Women</a>
+                                    <div class="megamenu mega02">
+                                        <ul class="item item02">
+                                            <li class="title">Formal</li>
+                                            <li><a onclick="openHeaderLink('zalora', '', 'women')">Zalora</a></li>
+                                            <li><a onclick="openHeaderLink('mango', '', 'women')">Mango</a></li>
+                                            <li><a onclick="openHeaderLink('ax paris', '', 'women')">AX Paris</a></li>
+                                            <li><a onclick="openHeaderLink('guess', '', 'women')">Guess</a></li>
+                                            <li><a onclick="openHeaderLink('gap', '', 'women')">GAP</a></li>
+                                        </ul>
+                                        <ul class="item item02">
+                                            <li class="title">Casual</a></li>
+                                            <li><a onclick="openHeaderLink('esprit', '', 'women')">ESPRIT</a></li>
+                                            <li><a onclick="openHeaderLink('london rag', '', 'women')">London Rag</a></li>
+                                            <li><a onclick="openHeaderLink('polo ralph lauren', '', 'women')">Polo Ralph Lauren</a></li>
+                                            <li><a onclick="openHeaderLink('zalora', '', 'women')">Zalora</a></li>
+                                            <li><a onclick="openHeaderLink('forever 21', '', 'women')">Forever 21</a></li>
+                                        </ul>
+                                        <ul class="item item02">
+                                            <li class="title">Sports</a></li>
+                                            <li><a onclick="openHeaderLink('adidas', '', 'women')">Adidas</a></li>
+                                            <li><a onclick="openHeaderLink('nike', '', 'women')">Nike</a></li>
+                                            <li><a onclick="openHeaderLink('puma', '', 'women')">Puma</a></li>
+                                            <li><a onclick="openHeaderLink('Superdry', '', 'women')">Superdry</a></li>
+                                            <li><a onclick="openHeaderLink('under armour', '', 'women')">Under Armour</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop"><a href="#">Kids</a>
+                                    <div class="megamenu mega02">
+                                        <ul class="item item02">
+                                            <li class="title">Baby</li>
+                                            <li><a onclick="openHeaderLink('baby poney', '', 'kids')">Baby Poney</a></li>
+                                            <li><a onclick="openHeaderLink('disney baby', '', 'kids')">Disney Baby</a></li>
+                                            <li><a onclick="openHeaderLink('gap', '', 'kids')">GAP</a></li>
+                                            <li><a onclick="openHeaderLink('mango baby', '', 'kids')">Mango Baby</a></li>
+                                            <li><a onclick="openHeaderLink('poney', '', 'kids')">Poney</a></li>
+                                        </ul>
+                                        <ul class="item item02">
+                                            <li class="title">Casual</a></li>
+                                            <li><a onclick="openHeaderLink('abercrombie & fitch', '', 'kids')">Abercrombie & Fitch</a></li>
+                                            <li><a onclick="openHeaderLink('babybol', '', 'kids')">Babybol</a></li>
+                                            <li><a onclick="openHeaderLink('gap', '', 'kids')">GAP</a></li>
+                                            <li><a onclick="openHeaderLink('guess', '', 'kids')">GUESS</a></li>
+                                            <li><a onclick="openHeaderLink('little nuuna', '', 'kids')">Little Nuuna</a></li>
+                                        </ul>
+                                        <ul class="item item02">
+                                            <li class="title">Sports</a></li>
+                                            <li><a onclick="openHeaderLink('adidas', '', 'kids')">Adidas</a></li>
+                                            <li><a onclick="openHeaderLink('nike', '', 'kids')">Nike</a></li>
+                                            <li><a onclick="openHeaderLink('puma', '', 'kids')">Puma</a></li>
+                                            <li><a onclick="openHeaderLink('under armour', '', 'kids')">Under Armour</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="drop"><a href="#">Custom Size</a>
+									<div class="megamenu dropdown">
+										<ul class="item item01">
+											<li><a href="upper-body.html">Upper Body</a></li>
+											<li><a href="lower-body.html">Lower Body</a></li>
+										</ul>
+									</div>
+                                </li>			
+                                <li class="drop"><a href="#">Help</a>
+									<div class="megamenu dropdown">
+										<ul class="item item01">
+											<li><a href="faq.html">FAQs</a></li>
+											<li class="label2"><a href="terms-and-conditions.html">Legal & Privacy</a>
+												<ul>
+													<li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+													<li><a href="privacy-and-cookies.html">Privacy and Cookies</a></li>
+												</ul>
+											</li>
+											<li><a href="contact.html">Contact Us</a></li>
+										</ul>
+									</div>
+                                </li>			
+                            </ul>
+						</nav>
+					</div>
+                    <div class="col-md-8 col-sm-8 col-5 col-lg-2">
+                        <ul class="header__sidebar__right d-flex justify-content-end align-items-center">
+                            <li class="wishlist" id="wishlist">
+								<a class="wishlist_active" href="wishlist.html"></a>
+							</li>
+                     <li class="shopcart">
+								<a class="cartbox_active" id="shopcart"></a>
+                                <!-- Start Shopping Cart -->
+                                <div class="block-minicart minicart__active">
+                                    <div class="minicart-content-wrapper">
+                                        <div class="micart__close">
+                                            <span>close</span>
+                                        </div>
+                                        <div class="items-total d-flex justify-content-between" id="cart_count">
+                                        </div>
+                                        <div class="total_amount text-right">
+                                            <span id="cart_total"></span>
+                                        </div>
+                                        <div class="mini_action checkout">
+                                            <a class="checkout__btn" href="cart.html">Go to Cart</a>
+                                        </div>
+                                        <div class="single__items">
+                                            <div class="miniproduct" id="mini_cart">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- End Shopping Cart -->
+                            <li class="setting__bar__icon"><a class="setting__active"></a>
+								<div class="searchbar__content setting__block p-0">
+									<div class="content-inner">
+										<div class="switcher-currency">
+											<strong class="label switcher-label">
+												<span>Account Options</span>
+											</strong>
+											<div class="switcher-options">
+												<div class="switcher-currency-trigger">
+													<div class="setting__menu">
+														<span><a href="login.html">Log in</a></span>
+														<span><a href="#exampleModalCenter" data-toggle="modal" data-target= #modal_order id="#exampleModalCenter">Track My Order</a></span>
+														 <!-- Modal -->
+														 <div class="modal p-0" id="modal_order" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="cursor:default;">
+															<div class="modal-dialog modal-dialog-centered portfolio_modal" role="document">
+																<div class="modal-content mobile_modal">
+																	<div class="modal-header">
+																		<h5 class="modal-title" id="exampleModalLongTitle" style="color: gray;">Track My Order</h4>
+																		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																		</button>
+																	</div>
+																	<div class="modal-body pl-2" style="height: 220px;">
+																		<h6 class="pb-3 pl-2" style="text-align:left;"> Email Address</h6>
+																		<input type="text" id="emailTracking" name="emailTracking" style=" height:51px; font-size:14pt; text-align: left; float:left; margin-bottom: 10px; margin-left: 6px;"><br><br>
+																		<h6 class="pb-2 pl-2" style="text-align:left;"> Order Number </h6>
+																		<input type="text" id="orderNumber" name="orderNumber" style=" height:51px; font-size:14pt; text-align: left; float:left; margin-bottom: 10px; margin-left: 6px; margin-top:10px"><br><br>
+																	</div>
+																	<div class="modal-footer" style="background-color: #e1e1e1">
+																		<button type="button" class="btn btn-secondary">Track</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Start Mobile Menu -->
+                <div class="row d-none">
+                    <div class="col-lg-12 d-none">
+                        <nav class="mobilemenu__nav">
+                            <ul class="meninmenu">
+                                <li><a href="#">Brands</a>
+                                    <ul>
+                                        <li><a href="#">Top Brands | Men</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('tommy hilfiger', '', 'men')">Tommy Hilfiger</a></li>
+                                                <li><a onclick="openHeaderLink('the north face', '', 'men')">The North Face</a></li>
+                                                <li><a onclick="openHeaderLink('polo ralph lauren', '', 'men')">Polo Ralph Lauren</a></li>
+                                                <li><a onclick="openHeaderLink('gucci', '', 'men')">Gucci</a></li>
+                                                <li><a onclick="openHeaderLink('cotton on', '', 'men')">Cotton On</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Top Brands | Women</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('banana republic', '', 'women')">Banana Republic</a></li>
+                                                <li><a onclick="openHeaderLink('forever 21', '', 'women')">FOREVER 21</a></li>
+                                                <li><a onclick="openHeaderLink('h&m', '', 'women')">H&M</a></li>
+                                                <li><a onclick="openHeaderLink('mango', '', 'women')">Mango</a></li>
+                                                <li><a onclick="openHeaderLink('zalora', 'zalora', 'women')">Zalora</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Top Brands | Kids</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('abercrombie & fitch', '', 'kids')">Abercrombie & Fitch</a></li>
+                                                <li><a onclick="openHeaderLink('poney', '', 'kids')">Poney</a></li>
+                                                <li><a onclick="openHeaderLink('disney baby', '', 'kids')">Disney Baby</a></li>
+                                                <li><a onclick="openHeaderLink('kiko', '', 'kids')">KIKO</a></li>
+                                                <li><a onclick="openHeaderLink('akarana baby', '', 'kids')">Akarana Baby</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Men</a>
+                                    <ul>
+                                        <li><a href="#">Formal</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('esprit', '', 'men')">Esprit</a></li>
+                                                <li><a onclick="openHeaderLink('pacolino', '', 'men')">Pacolino</a></li>
+                                                <li><a onclick="openHeaderLink('tommy hilfiger', '', 'men')">Tommy Hilfiger</a></li>
+                                                <li><a onclick="openHeaderLink('boss', '', 'men')">BOSS</a></li>
+                                                <li><a onclick="openHeaderLink('dockers', '', 'men')">Dockers</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Casual</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('champion', '', 'men')">Champion</a></li>
+                                                <li><a onclick="openHeaderLink('converse', '', 'men')">Converse</a></li>
+                                                <li><a onclick="openHeaderLink('gucci', '', 'men')">Gucci</a></li>
+                                                <li><a onclick="openHeaderLink('fendi', '', 'men')">Fendi</a></li>
+                                                <li><a onclick="openHeaderLink('gap', '', 'men')">GAP</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Sports</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('adidas', '', 'men')">Adidas</a></li>
+                                                <li><a onclick="openHeaderLink('nike', '', 'men')">Nike</a></li>
+                                                <li><a onclick="openHeaderLink('puma', '', 'men')">Puma</a></li>
+                                                <li><a onclick="openHeaderLink('under armour', '', 'men')">Under Armour</a></li>
+                                                <li><a onclick="openHeaderLink('kappa', '', 'men')">Kappa</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Women</a>
+                                    <ul>
+                                        <li><a href="#">Formal</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('zalora', '', 'women')">Zalora</a></li>
+                                                <li><a onclick="openHeaderLink('mango', '', 'women')">Mango</a></li>
+                                                <li><a onclick="openHeaderLink('ax paris', '', 'women')">AX Paris</a></li>
+                                                <li><a onclick="openHeaderLink('guess', '', 'women')">Guess</a></li>
+                                                <li><a onclick="openHeaderLink('gap', '', 'women')">GAP</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Casual</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('esprit', '', 'women')">ESPRIT</a></li>
+                                                <li><a onclick="openHeaderLink('london rag', '', 'women')">London Rag</a></li>
+                                                <li><a onclick="openHeaderLink('polo ralph lauren', '', 'women')">Polo Ralph Lauren</a></li>
+                                                <li><a onclick="openHeaderLink('zalora', '', 'women')">Zalora</a></li>
+                                                <li><a onclick="openHeaderLink('forever 21', '', 'women')">Forever 21</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Sports</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('adidas', '', 'women')">Adidas</a></li>
+                                                <li><a onclick="openHeaderLink('nike', '', 'women')">Nike</a></li>
+                                                <li><a onclick="openHeaderLink('puma', '', 'women')">Puma</a></li>
+                                                <li><a onclick="openHeaderLink('Superdry', '', 'women')">Superdry</a></li>
+                                                <li><a onclick="openHeaderLink('under armour', '', 'women')">Under Armour</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Kids</a>
+                                    <ul>
+                                        <li><a href="#">Baby</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('baby poney', '', 'kids')">Baby Poney</a></li>
+                                                <li><a onclick="openHeaderLink('disney baby', '', 'kids')">Disney Baby</a></li>
+                                                <li><a onclick="openHeaderLink('gap', '', 'kids')">GAP</a></li>
+                                                <li><a onclick="openHeaderLink('mango baby', '', 'kids')">Mango Baby</a></li>
+                                                <li><a onclick="openHeaderLink('poney', '', 'kids')">Poney</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Casual</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('abercrombie & fitch', '', 'kids')">Abercrombie & Fitch</a></li>
+                                                <li><a onclick="openHeaderLink('babybol', '', 'kids')">Babybol</a></li>
+                                                <li><a onclick="openHeaderLink('gap', '', 'kids')">GAP</a></li>
+                                                <li><a onclick="openHeaderLink('guess', '', 'kids')">GUESS</a></li>
+                                                <li><a onclick="openHeaderLink('little nuuna', '', 'kids')">Little Nuuna</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Sports</a>
+                                            <ul>
+                                                <li><a onclick="openHeaderLink('adidas', '', 'kids')">Adidas</a></li>
+                                                <li><a onclick="openHeaderLink('nike', '', 'kids')">Nike</a></li>
+                                                <li><a onclick="openHeaderLink('puma', '', 'kids')">Puma</a></li>
+                                                <li><a onclick="openHeaderLink('under armour', '', 'kids')">Under Armour</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Custom Size</a>
+                                    <ul>
+                                        <li><a href="upper-body.html">Upper Body</a></li>
+                                        <li><a href="lower-body.html">Lower Body</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drop"><a href="#">Help</a>
+                                    <ul>
+                                        <li><a href="faq.html">FAQs</a></li>
+                                        <li><a href="#">Legal & Privacy</a>
+                                            <ul>
+                                                <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                                                <li><a href="privacy-and-cookies.html">Privacy and Cookies</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- End Mobile Menu -->
+                <div class="mobile-menu d-block d-lg-none">
+                </div>
+                <!-- Mobile Menu -->
+            </div>
+        </header>
+        <!-- //Header -->
+        <!-- Start Bradcaump area  -->
+        <div class="ht__bradcaump__area bg-image--6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Bradcaump area -->
+        <!-- Start Shop Page -->
+        <div class="page-shop-sidebar left--sidebar bg--white section-padding--lg" style="padding: 0px;">
+            <div class="row">
+                <div class="col-lg-3 col-12 order-2 order-lg-1" style="padding:0%;max-width: 265px;">
+                    <div class="img_trans" id="cf4a">
+                        <img src="https://dynamic.zacdn.com/GJiGZyCfEQ8PpBzkLALKBOiMwWI=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/adidas-4603-8906091-1.jpg" width="280" height="350" alt="product image">
+                        <img src="https://dynamic.zacdn.com/T8xydF7fyfZredGG6YLdzTO-mzw=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/missguided-1425-0505691-1.jpg" width="280" height="350" alt="product image">
+                        <img src="https://dynamic.zacdn.com/g0NETkHTDcHfpMx0xPUhtIU-NFU=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/esprit-9476-3838381-1.jpg" width="280" height="350" alt="product image">
+						<img src="https://dynamic.zacdn.com/-TM5s6TmmXiDzh6RAEhOBipuaOA=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/tommy-hilfiger-0248-5277302-1.jpg" width="280" height="350" alt="product image">
+						<img src="https://dynamic.zacdn.com/-KDiw1ntJJluf80V4qsqo3Skrq0=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/forever-21-3074-8344391-1.jpg" width="280" height="350" alt="product image">
+                    </div>
+                    <div class="img_trans" id="cf4a">
+						<img src="https://dynamic.zacdn.com/a72vG78T2HG6KbRnWUjEORo6Ngk=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/levis-8807-1105651-1.jpg" width="280" height="350" alt="product image">
+						<img src="https://dynamic.zacdn.com/XcFg5T9MCsRBMu6zj7kUV-PFS3M=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/polo-ralph-lauren-2486-1285791-1.jpg" width="280" height="350" alt="product image">
+						<img src="https://dynamic.zacdn.com/0I5vGxeINgbizOMKCwr23CXATYI=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/abercrombie-fitch-9555-1674591-1.jpg" width="280" height="350" alt="product image">
+						<img src="https://dynamic.zacdn.com/zHfwkNHFJXPjFQet2U0E2KGi0bs=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/missguided-3400-4708802-1.jpg" width="280" height="350" alt="product image">
+						<img src="https://dynamic.zacdn.com/Op8lF5hXVFEF7WbV13oGXzJ19Fw=/fit-in/236x345/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/guess-1453-0415502-1.jpg" width="280" height="350" alt="product image">                   
+					</div>
+                </div>
+                <div class="col-lg-5 col-12 order-2 order-lg-1" style="padding: 0px;">
+                    <div class="img_trans-big m-0" id="cf5a">
+                        <img src="https://cottonon.com/on/demandware.static/-/Sites-catalog-master-body/default/dw5ff1262a/651897/651897-01-1.jpg" width="525" height="700" alt="product image">
+                        <img src="https://cottonon.com/dw/image/v2/BBDS_PRD/on/demandware.static/-/Sites-catalog-master-women/default/dwa49c9a67/2007800/2007800-05-2.jpg?sw=566&sh=849&sm=fit" width="525" height="700" alt="product image">
+                        <img src="https://www.fashiongonerogue.com/wp-content/uploads/2018/03/Free-People-March-2018-Catalog06.jpg" width="525" height="700" alt="product image">
+                        <img src="https://hottopic.scene7.com/is/image/HotTopic/11837185_hi?$pdp_hero_standard$" width="525" height="700" alt="product image">
+                        <img src="https://res-3.cloudinary.com/tara-jarmon/image/upload/c_fill,dpr_1.0,f_auto,h_910,q_auto,w_645/media/catalog/product/1/3/13626-h0375-10_blanc_1.jpg" width="525" height="700" alt="product image">
+                    </div>
+                </div>
+                <div class="search__bar col-lg-4 col-12 order-1 order-lg-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mobileview">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb" style="margin-left: 30px; margin-right: 25px; margin-top: 25px; margin-bottom: 50px;">
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Search</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="account__title_search">Search</h2>
+                    <div class="row d-flex justify-content-start" style="position: relative;">
+                        <div class="wrap_search">
+                            <div class="input-group border border-dark rounded-pill p-1">
+                                <div class="input-group-prepend border-0">
+                                    <button id="button-addon4" type="button" class="btn btn-link text-dark" onclick="search()"><i class="fa fa-search"></i></button>
+                                </div>
+                                <input type="search" onsearch="search()" placeholder="What are you looking for?" aria-describedby="button-addon4" class="form-control border-0" name="search_value" id="search_bar">
+                            </div>
+                            <!-- Rounded switch -->
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-start">
+                                    <p class="toggle_tops mt-4">Tops</p>
+                                    <p class="toggle_tops_mv" id="tb_text_mv">Tops</p>
+                                    <label class="switch mt-4" id="resetTB">
+                                    </label>
+                                    <label class="switch_mv" id="resetTB_mv">
+                                    </label>
+                                    <p class="toggle_bottom_mv">Search for Tops / Bottoms</p>
+                                    <p class="toggle_bottom mt-4">Bottoms</p>
+                                    <label class="switch cs mt-4" id="resetCustomSizing">
+                                    </label>
+                                    <div id="notifications"></div>
+                                    <p class="toggle_cs mt-4">Enable Custom Sizing</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-12 d-flex justify-content-start mb-5">
+                                    <p class="toggle_tops_mv" id="cs_text">Disabled</p>
+                                    <label class="switch_mv" id="resetCustomSizing_mv">
+                                    </label>
+                                    <div id="notifications"></div>
+                                    <p class="toggle_cs_mv">Search with Custom Sizing?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>	
+        <!-- End Shop Page -->
+        <!-- Footer Area -->
+        <footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
+			<div class="footer-static-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="footer__widget footer__menu">
+								<div class="ft__logo">
+										<a href="index.html">
+										<img src="images/logo/black1.png" alt="logo">
+										</a>
+										<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered duskam alteration variations of passages</p>
+									</div>
+								<div class="footer__content">
+									<ul class="social__net social__net--2 d-flex justify-content-center">
+									<li><a href="https://www.facebook.com/custlr/"><i class="bi bi-facebook"></i></a></li>
+									<li><a href="https://twitter.com/custlr"><i class="bi bi-twitter"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/custlr/"><i class="bi bi-linkedin"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCox3ZZRUjkqrCRwtrnYSW2A"><i class="bi bi-youtube"></i></a></li>
+									</ul>
+									<ul class="mainmenu d-flex justify-content-center">
+										<li><a onclick="allProducts('men')">Men Product</a></li>
+										<li><a onclick="allProducts('women')">Women Product</a></li>
+										<li><a onclick="allProducts('kids')">Kids Product</a></li>
+										<li><a href="wishlist.html">Wishlist</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+        <!-- //Footer Area -->
+        <!-- QUICKVIEW PRODUCT -->
+        <div id="quickview-wrapper">
+            <!-- Modal -->
+            <div class="modal fade" id="productmodal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal__container" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header modal__header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-product">
+                                <!-- Start product images -->
+                                <div class="product-images">
+                                    <div class="main-image images">
+                                        <img alt="big images" src="images/product/big-img/1.jpg">
+                                    </div>
+                                </div>
+                                <!-- end product images -->
+                                <div class="product-info">
+                                    <h1>Simple Fabric Bags</h1>
+                                    <div class="rating__and__review">
+                                        <ul class="rating">
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                            <li><span class="ti-star"></span></li>
+                                        </ul>
+                                        <div class="review">
+                                            <a href="#">4 customer reviews</a>
+                                        </div>
+                                    </div>
+                                    <div class="price-box-3">
+                                        <div class="s-price-box">
+                                            <span class="new-price">$17.20</span>
+                                            <span class="old-price">$45.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="quick-desc">
+                                        Designed for simplicity and made from high quality materials. Its sleek geometry and material combinations creates a modern look.
+                                    </div>
+                                    <div class="select__color">
+                                        <h2>Select color</h2>
+                                        <ul class="color__list">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="gold"><a title="Gold" href="#">Gold</a></li>
+                                            <li class="orange"><a title="Orange" href="#">Orange</a></li>
+                                            <li class="orange"><a title="Orange" href="#">Orange</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="select__size">
+                                        <h2>Select size</h2>
+                                        <ul class="color__list">
+                                            <li class="l__size"><a title="L" href="#">L</a></li>
+                                            <li class="m__size"><a title="M" href="#">M</a></li>
+                                            <li class="s__size"><a title="S" href="#">S</a></li>
+                                            <li class="xl__size"><a title="XL" href="#">XL</a></li>
+                                            <li class="xxl__size"><a title="XXL" href="#">XXL</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="social-sharing">
+                                        <div class="widget widget_socialsharing_widget">
+                                            <h3 class="widget-title-modal">Share this product</h3>
+                                            <ul class="social__net social__net--2 d-flex justify-content-start">
+                                                <li class="facebook"><a href="#" class="rss social-icon"><i class="zmdi zmdi-rss"></i></a></li>
+                                                <li class="linkedin"><a href="#" class="linkedin social-icon"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                                <li class="pinterest"><a href="#" class="pinterest social-icon"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                                <li class="tumblr"><a href="#" class="tumblr social-icon"><i class="zmdi zmdi-tumblr"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="addtocart-btn">
+                                        <a href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END QUICKVIEW PRODUCT -->
+    </div>
+    <!-- //Main wrapper -->
+
+    <!-- JS Files -->
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/cart-mini.js"></script>
+    <script src="js/sizingChart.js"></script>
+    <script src="js/notify.min.js"></script>
+    <script>
+
+        function notifyCustomSizing(link) {
+			$( document ).ready(function() {
+				$("div").click(
+				NotifyLink("You haven't saved a custom size!", 1000, null, "danger", link)
+				);
+                sessionStorage.setItem('back_page', window.location.href);
+			});
+        };
+        
+        function notifySizingAvailable() {
+			$( document ).ready(function() {
+				$("div").click(
+				Notify("Custom sizing enabled!", 1000, null, "info")
+				);
+			});
+        };
+        
+        var sizing_toggle = false;
+		var tb_toggle = 'tops';
+		var tb_search = '';
+		setTimeout(function(){
+            document.getElementById("resetTB").innerHTML = '<input type="checkbox" onclick="toggleTopOrBottom()"><span class="slider_tb round"></span>';
+            document.getElementById("resetTB_mv").innerHTML = '<input type="checkbox" onclick="toggleTopOrBottom()"><span class="slider_tb round"></span>';
+            document.getElementById("resetCustomSizing").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+            document.getElementById("resetCustomSizing_mv").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+		}, 100);
+		var to_search = '';
+
+		function toggleCustomSizing(){
+			sizing_toggle = !sizing_toggle;
+			if (sizing_toggle){
+				if (tb_toggle == 'tops'){
+					var measurements = JSON.parse(localStorage.getItem("custom_top"));
+					if (measurements === null){
+						notifyCustomSizing("upper-body.html");
+                        document.getElementById("resetCustomSizing").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+                        document.getElementById("resetCustomSizing_mv").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+
+                        document.getElementById("cs_text").innerHTML = "Disabled";
+						sizing_toggle = false;
+                        localStorage.removeItem("check_top");
+					}
+					else{
+                        notifySizingAvailable();
+                        document.getElementById("cs_text").innerHTML = "Enabled";
+						var adjusted_measurements = {
+							"chest": measurements.chest,
+							"waist": measurements.waist,
+							"arm": measurements.arm,
+							"hip": measurements.hip
+						}
+						sizing_match(adjusted_measurements, women_tops, 'tops', 'Women')
+						var temp_obj = JSON.parse(localStorage.getItem('best_womens_top'));
+						to_search = '&uk=' + temp_obj.uk + '&us=' + temp_obj.us + '&eu=' + temp_obj.eu + '&intl=' + temp_obj.intl
+                        tb_search = '&subcategory=tops';
+                        localStorage.setItem("check_top", "check");
+					}
+				}
+				else{
+					var measurements = localStorage.getItem("custom_bottom");
+					if (measurements === null){
+						notifyCustomSizing("lower-body.html");
+                        document.getElementById("resetCustomSizing").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+                        document.getElementById("resetCustomSizing_mv").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+                        document.getElementById("cs_text").innerHTML = "Disabled";
+						sizing_toggle = false;
+                        localStorage.removeItem("check_bottom");
+					}
+					else{
+                        notifySizingAvailable();
+                        document.getElementById("cs_text").innerHTML = "Enabled";
+						var adjusted_measurements = {
+							"inseam": measurements.inseam,
+							"waist": measurements.waist,
+							"hip": measurements.hip
+						}
+						sizing_match(adjusted_measurements, women_bottoms, 'bottoms', 'Women')
+						var temp_obj = JSON.parse(localStorage.getItem('best_womens_bottom'));
+						to_search = '&uk=' + temp_obj.uk + '&us=' + temp_obj.us + '&eu=' + temp_obj.eu + '&intl=' + temp_obj.intl;
+                        tb_search = '&subcategory=bottoms';
+                        localStorage.setItem("check_bottom", "check");
+					}
+				}
+			}
+            else{
+                document.getElementById("cs_text").innerHTML = "Disabled";
+            }	
+		};
+		
+
+		function toggleTopOrBottom(){
+			if (sizing_toggle){
+                if (tb_toggle == 'tops'){
+                    var measurements = localStorage.getItem("custom_bottom");
+					if (measurements === null){
+						notifyCustomSizing("lower-body.html");
+                        document.getElementById("resetTB").innerHTML = '<input type="checkbox" onclick="toggleTopOrBottom()"><span class="slider_tb round"></span>';
+                        document.getElementById("resetTB_mv").innerHTML = '<input type="checkbox" onclick="toggleTopOrBottom()"><span class="slider_tb round"></span>';
+                        document.getElementById("resetCustomSizing").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+                        document.getElementById("resetCustomSizing_mv").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+                        document.getElementById("cs_text").innerHTML = "Disabled";
+						sizing_toggle = false;
+                        localStorage.removeItem("check_bottom");
+					}
+                    else{
+                        notifySizingAvailable();
+                        document.getElementById("cs_text").innerHTML = "Enabled";
+                        document.getElementById("tb_text").innerHTML = "Bottoms";
+                        document.getElementById("tb_text_mv").innerHTML = "Bottoms";
+						var adjusted_measurements = {
+							"inseam": measurements.inseam,
+							"waist": measurements.waist,
+							"hip": measurements.hip
+						}
+						sizing_match(adjusted_measurements, women_bottoms, 'bottoms', 'Women')
+						var temp_obj = JSON.parse(localStorage.getItem('best_womens_bottom'));
+						to_search = '&uk=' + temp_obj.uk + '&us=' + temp_obj.us + '&eu=' + temp_obj.eu + '&intl=' + temp_obj.intl
+                        tb_toggle = 'bottoms';
+                        tb_search = '&subcategory=bottoms';
+                        localStorage.setItem("check_bottom", "check");
+					}
+                }
+                else{
+                    var measurements = localStorage.getItem("custom_top");
+					if (measurements === null){
+						notifyCustomSizing("upper-body.html");
+                        document.getElementById("resetTB").innerHTML = '<input type="checkbox" onclick="toggleTopOrBottom()" checked><span class="slider_tb round"></span>';
+                        document.getElementById("resetTB_mv").innerHTML = '<input type="checkbox" onclick="toggleTopOrBottom()" checked><span class="slider_tb round"></span>';
+                        document.getElementById("resetCustomSizing").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+                        document.getElementById("resetCustomSizing_mv").innerHTML = '<input type="checkbox" onclick="toggleCustomSizing()"><span class="slider round"></span>';
+                        document.getElementById("cs_text").innerHTML = "Disabled";
+						sizing_toggle = false;
+                        localStorage.removeItem("check_top");
+					}
+                    else{
+                        notifySizingAvailable();
+                        document.getElementById("cs_text").innerHTML = "Enabled";
+                        document.getElementById("tb_text").innerHTML = "Tops";
+                        document.getElementById("tb_text_mv").innerHTML = "Tops";
+                        var adjusted_measurements = {
+							"chest": measurements.chest,
+							"waist": measurements.waist,
+							"arm": measurements.arm,
+							"hip": measurements.hip
+						}
+						sizing_match(adjusted_measurements, women_tops, 'tops', 'Women')
+						var temp_obj = JSON.parse(localStorage.getItem('best_womens_top'));
+						to_search = '&uk=' + temp_obj.uk + '&us=' + temp_obj.us + '&eu=' + temp_obj.eu + '&intl=' + temp_obj.intl
+                        tb_toggle = 'tops'
+                        tb_search = '&subcategory=tops';
+                        localStorage.setItem("check_top", "check");
+					}
+                }
+            } 
+            else {
+                if (tb_toggle == 'tops'){
+                    document.getElementById("tb_text_mv").innerHTML = "Bottoms";
+                    tb_toggle = 'bottoms';
+                    tb_search = '&subcategory=bottoms';
+                }
+                else{
+                    document.getElementById("tb_text_mv").innerHTML = "Tops";
+                    tb_toggle = 'tops';
+                    tb_search = '&subcategory=tops';
+                }
+            }
+		};
+
+        function search(){ //sends search request to backend for JSON response
+			// Create a request variable and assign a new XMLHttpRequest object to it.
+			var request = new XMLHttpRequest()
+
+			// replaces white space
+            search_value = "?search=" + encodeURIComponent(document.getElementById("search_bar").value) + "&category=women";
+			sessionStorage.setItem("search_term_text", document.getElementById("search_bar").value);
+            sessionStorage.setItem("search_term", search_value);
+			// Open a new connection, using the GET request on the URL endpoint
+			var search = 'http://custlrwa.ddns.net:8000/scraped/' + search_value + tb_search;
+            if (sizing_toggle){
+				search += to_search;
+			}
+            request.open('GET', search, true)
+
+			request.onload = function loadHTML(){
+                var resultText = request.responseText;
+				sessionStorage.setItem("search_result", resultText); 
+                sessionStorage.setItem("current_page", 1);
+                sessionStorage.removeItem("selectBox");
+                getBrandList();
+			}
+			// Send request
+            request.send();
+        };
+
+        function getBrandList(){
+			var request = new XMLHttpRequest()
+            var search_value = sessionStorage.getItem("search_term");
+            var search = 'http://custlrwa.ddns.net:8000/scraped/' + search_value + '&brandlist=true';
+            request.open('GET', search, true)
+
+            request.onload = function loadHTML(){
+                var resultText = (JSON.parse(request.responseText)).results;
+                var i;
+                var brands = [];
+                for (i=0; i<resultText.length; i++){
+                    brands = brands.concat(resultText[i].brand);
+                };
+                sessionStorage.setItem("brand_list", JSON.stringify(brands));
+                window.location.replace("shop-grid-women.html");
+            }
+            // Send request
+            request.send();
+		};
+
+        function getWishlist(){
+            var wishlist = JSON.parse(localStorage.getItem("wishlist"));
+            if (wishlist === undefined || wishlist === null){
+                wishlist = [];
+            }
+            return wishlist;
+        }
+        
+        var wishlist = getWishlist();
+
+        if (wishlist.length != 0) {
+            document.getElementById("wishlist").innerHTML = '<a class="wishlist_active" href="wishlist.html"><span class="product_qun">' + wishlist.length + '</span></a>';
+        }
+        else {
+            var empty = '<a class="wishlist_active" href="wishlist.html"></a>';
+            document.getElementById("wishlist").innerHTML = empty;
+        }
+
+        function openHeaderLink(brand, search, gender){
+            var request = new XMLHttpRequest()
+
+			// replaces white space
+            if (search == ''){
+                search = brand
+            }
+
+            search_value = "?search=" + encodeURIComponent(search) + "&category=" + gender + '&brand=' + encodeURIComponent(brand);
+            sessionStorage.setItem("search_term_text", search);
+            sessionStorage.setItem("search_term", search_value);
+			// Open a new connection, using the GET request on the URL endpoint
+			var search = 'http://custlrwa.ddns.net:8000/scraped/' + search_value
+            request.open('GET', search, true)
+
+			request.onload = function loadHTML(){
+                var resultText = request.responseText;
+				sessionStorage.setItem("search_result", resultText); 
+                sessionStorage.setItem("current_page", 1);
+                sessionStorage.removeItem("selectBox");
+                headerBrandList(gender);
+			}
+			// Send request
+            request.send();
+        };
+
+        function headerBrandList(gender){
+			var request = new XMLHttpRequest()
+            var search_value = sessionStorage.getItem("search_term");
+            var search = 'http://custlrwa.ddns.net:8000/scraped/' + search_value + '&brandlist=true';
+            request.open('GET', search, true)
+
+            request.onload = function loadHTML(){
+                var resultText = (JSON.parse(request.responseText)).results;
+                var i;
+                var brands = [];
+                for (i=0; i<resultText.length; i++){
+                    brands = brands.concat(resultText[i].brand);
+                };
+                sessionStorage.setItem("brand_list", JSON.stringify(brands));
+                window.location.replace("shop-grid-"+ gender +".html");
+            }
+            // Send request
+            request.send();
+        }
+	</script>
+    <script>
+        function allProducts(gender){ //sends search request to backend for JSON response
+            // Create a request variable and assign a new XMLHttpRequest object to it.
+            var request = new XMLHttpRequest()
+
+            // replaces white space
+			search_value = "?search=" + "&category=" + gender;
+            sessionStorage.removeItem("search_term_text");
+			sessionStorage.setItem("search_term", search_value);
+            // Open a new connection, using the GET request on the URL endpoint
+            var search = 'http://custlrwa.ddns.net:8000/scraped/' + search_value
+               
+               request.open('GET', search, true)
+
+            request.onload = function loadHTML(){
+               var resultText = request.responseText;
+               sessionStorage.setItem("search_result", resultText); 
+               sessionStorage.setItem("current_page", 1);
+               sessionStorage.removeItem("selectBox");
+               footerBrandList(gender);
+            }
+            // Send request
+               request.send();
+         };
+
+         function footerBrandList(gender){
+			var request = new XMLHttpRequest()
+            var search_value = sessionStorage.getItem("search_term");
+			var search = 'http://custlrwa.ddns.net:8000/scraped/' + search_value + '&brandlist=true';
+            request.open('GET', search, true)
+
+            request.onload = function loadHTML(){
+                var resultText = (JSON.parse(request.responseText)).results;
+                var i;
+                var brands = [];
+                for (i=0; i<resultText.length; i++){
+                    brands = brands.concat(resultText[i].brand);
+                };
+                sessionStorage.setItem("brand_list", JSON.stringify(brands));
+                window.location.replace("shop-grid-" + gender + ".html");
+            }
+            // Send request
+            request.send();
+		};
+	</script>
+</body>
+
+</html>
